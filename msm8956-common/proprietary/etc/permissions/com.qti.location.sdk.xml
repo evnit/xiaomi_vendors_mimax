@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--/******************************************************************************
-*  @file    com.qti.location.sdk.xml
-*  @brief   configuration file for permission mapping and library publishing
+<!---/******************************************************************************
+* @file    com.qti.location.sdk.xml
+* @brief   configuration file for permission mapping and library publishing
 *  Copyright (c) 2015 Qualcomm Technologies, Inc.
 *  All Rights Reserved.
 *  Confidential and Proprietary - Qualcomm Technologies, Inc.
