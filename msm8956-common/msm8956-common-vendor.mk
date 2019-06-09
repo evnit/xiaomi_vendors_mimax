@@ -605,21 +605,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so
 
 # WFD
-#PRODUCT_COPY_FILES += \
-#    vendor/xiaomi/msm8956-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdcommonutils.so:system/lib64/libwfdcommonutils.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdconfigutils.so:system/lib64/libwfdconfigutils.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
-#    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdmminterface.so:system/lib64/libwfdmminterface.so
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/msm8956-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdcommonutils.so:system/lib64/libwfdcommonutils.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdconfigutils.so:system/lib64/libwfdconfigutils.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdmminterface.so:system/lib64/libwfdmminterface.so
 
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0 \
