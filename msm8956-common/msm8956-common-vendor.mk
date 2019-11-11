@@ -16,7 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/bin/dpmd:system/bin/dpmd \
-    vendor/xiaomi/msm8956-common/proprietary/bin/wcnss_service:system/bin/wcnss_service \
     vendor/xiaomi/msm8956-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/xiaomi/msm8956-common/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
     vendor/xiaomi/msm8956-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
@@ -111,9 +110,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/xiaomi/msm8956-common/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/xiaomi/msm8956-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
+    vendor/xiaomi/msm8956-common/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
     vendor/xiaomi/msm8956-common/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
     vendor/xiaomi/msm8956-common/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.gnss@1.0-service \
     vendor/xiaomi/msm8956-common/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/xiaomi/msm8956-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
@@ -175,6 +173,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.gnss@1.0-service.rc \
     vendor/xiaomi/msm8956-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/xiaomi/msm8956-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/xiaomi/msm8956-common/proprietary/vendor/etc/thermal-engine-8956.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-8956.conf \
+    vendor/xiaomi/msm8956-common/proprietary/vendor/etc/thermal-engine-8976.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-8976.conf \
     vendor/xiaomi/msm8956-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/xiaomi/msm8956-common/proprietary/vendor/framework/qti-vzw-ims-internal.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qti-vzw-ims-internal.jar \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so \
@@ -289,7 +289,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libscale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscale.so \
@@ -337,7 +336,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@1.0_vendor.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_adreno.so \
@@ -464,7 +462,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-qmi-1.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-radioconfig.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qcril-hook-oem.so \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
@@ -605,21 +602,25 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so
 
 # WFD
+#PRODUCT_COPY_FILES += \
+#    vendor/xiaomi/msm8956-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdcommonutils.so:system/lib64/libwfdcommonutils.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdconfigutils.so:system/lib64/libwfdconfigutils.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+#    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdmminterface.so:system/lib64/libwfdmminterface.so
+
+# WV
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/msm8956-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdcommonutils.so:system/lib64/libwfdcommonutils.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdconfigutils.so:system/lib64/libwfdconfigutils.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
-    vendor/xiaomi/msm8956-common/proprietary/lib64/libwfdmminterface.so:system/lib64/libwfdmminterface.so
+    vendor/xiaomi/msm8956-common/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness
 
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0 \
